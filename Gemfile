@@ -11,7 +11,6 @@ group :development do
 gem 'sqlite3', '1.3.8'
 end
 
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '4.0.3'
 
@@ -49,3 +48,9 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+#USE POST-GRES GEM, USE RAILS GEM FOR HEROKU 
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
+end
